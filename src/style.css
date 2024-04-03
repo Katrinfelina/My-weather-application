@@ -1,0 +1,127 @@
+body {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+form {
+  border: none;
+  margin: 0;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; /* Zentriert die Elemente und gibt ihnen etwas Abstand */
+  align-items: center; /* Zentriert die Elemente vertikal */
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 300px;
+  margin: 0;
+}
+
+p {
+  color: rgb(177, 175, 175);
+}
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(177, 175, 175);
+  font-weight: 800;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #012f78;
+}
+
+.weather-application {
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.city-search {
+  flex-grow: 1;
+  min-width: 0;
+  background-color: #e7eef9;
+  color: #012f78;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 5px;
+}
+
+.city-search:focus {
+  border: none; /* Ändert den Rand zu einer 2px soliden Linie */
+  outline: none; /* Entfernt den zusätzlichen Fokus-Rand, den einige Browser hinzufügen */
+}
+
+.search-button {
+  font-size: 14px;
+  background-color: #a1c4fd;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.weather-units {
+  color: #a1c4fd;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-details {
+  display: block;
+}
+
+.current-temperature-icon {
+  font-size: 40px;
+  font-weight: 600px;
+  position: relative;
+  top: -10px;
+}
+
+.current-temperature-degrees {
+  font-size: 72px;
+  font-weight: 600px;
+}
+
+.current-temperature-unit {
+  font-size: 24px;
+  font-weight: 600px;
+  position: relative;
+  top: -38px;
+}
