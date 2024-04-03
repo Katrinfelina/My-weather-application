@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-application">
+      <header>
+        <form id="enter-city">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            name="city"
+            id="search-input"
+            class="city-search"
+            required
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="row">
+          <div class="weather-details">
+            <h1 id="current-city">City</h1>
+
+            <p>
+              <span id="current-date">Day, hh:mm</span>,
+              <span id="current-weather-condition">condition</span> <br />
+              Humidity:
+              <strong class="weather-units"
+                ><span id="current-humidity"></span> %</strong
+              >, Wind:
+              <strong class="weather-units">
+                <span id="current-wind"></span> km/h</strong
+              >
+            </p>
+          </div>
+
+          <div class="current-temperature">
+            <span class="current-temperature-icon"></span>
+            <span
+              class="current-temperature-degrees"
+              id="current-temperature-degrees"
+            ></span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+
+      <!--
+      <div class="weather-forecast">
+        <ul>
+          <li>
+            Sun <br />
+            ⛅<br />
+            <strong>min°C</strong> - max°C
+          </li>
+          <li>
+            Mon <br />
+            ⛅<br />
+            <strong>min°C</strong> - max°C
+          </li>
+          <li>
+            Tue <br />
+            ⛅<br />
+            <strong>min°C</strong> - max°C
+          </li>
+          <li>
+            Wed <br />
+            ⛅<br />
+            <strong>min°C</strong> - max°C
+          </li>
+          <li>
+            Thu <br />
+            ⛅<br />
+            <strong>min°C</strong> - max°C
+          </li>
+        </ul>
+      </div>
+      -->
+      <footer>
+        <p>
+          This project is coded by
+          <a href="" target="_blank" class="profile">Katrin Guschke</a> and is
+          on <a href="" target="_blank" class="github">GitHub</a> and hosted on
+          <a href="" target="_blank" class="netlify">Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
